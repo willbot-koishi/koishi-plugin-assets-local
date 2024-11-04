@@ -9,14 +9,23 @@
     "dist"
   ],
   "license": "MIT",
-  "scripts": {},
   "keywords": [
     "chatbot",
     "koishi",
     "plugin"
   ],
-  "devDependencies": {},
   "peerDependencies": {
     "koishi": "^4.18.0"
+  },
+  "dependencies": {
+    "koishi-plugin-assets-local": "^3.3.2"
+  },
+  "devDependencies": {
+    "@koishijs/plugin-server": "^3.2.4"
+  },
+  "scripts": {
+    "build": "yarn workspace willbot build w-assets-local",
+    "bump": "yarn workspace willbot bump w-assets-local",
+    "pub": "yarn workspace willbot pub w-assets-local"
   }
 }
